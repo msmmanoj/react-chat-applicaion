@@ -1,0 +1,19 @@
+.chat-engine-header {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    background: #2066fc;
+}
+
+.logout {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #210a50;
+    font-weight: bold;
+}
