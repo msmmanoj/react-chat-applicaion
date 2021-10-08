@@ -35,6 +35,10 @@ const Login = (props) => {
                 <div className="login-icon">
                     <img src="/login_icon.png" alt="Login"/>
                 </div>
+                {error ?
+                    <p style={{ color: '#aeabab',marginTop:'0px'}}>
+                        Invalid credentials
+                    </p> : ''}
                 <form onSubmit={handleSubmit} spellCheck="false">
                     <div>
                         <input className="form-user" type="text" value={user} onChange={(e) => setUser(e.target.value)}
@@ -48,10 +52,11 @@ const Login = (props) => {
                     </div>
                     <button className="form-button" type="submit">Login</button>
                 </form>
-                {error ?
-                    <h5 style={{alignItems: "center", color: '#aeabab'}}>
-                        Invalid credentials
-                    </h5> : ''}
+                <div className="copyright">
+                    <p style={{color: '#8e8c8c',fontSize:'small'}}>
+                        Copyright © <a href="https://github.com/msmmanoj?tab=repositories">Manoj Malepati </a> 2021.
+                    </p>
+                </div>
             </div>
         </div>
     )
